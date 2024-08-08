@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order-page</title>
+
+      <!--to link css-->
+      <link rel="stylesheet" href="./prdts1.css" type="text/css">
+      <link rel="stylesheet" href="./style.css" type="text/css">
+
+      <!--link to google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+      <!--link to reset css-->
+      <link rel="stylesheet" href="./css/reset.css">
+  
+      <!--link to font awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+     <!--==Navigation============================-->
+     <nav class="navigation">
+
+      <!--logo-------->
+      <div class="fresh">
+          <a href="#" class="logo">
+          <span>Fresh</span>Finds
+          </a>
+      </div>      
+
+
+
+      <!--menu--------->
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Us.html">AboutUs</a></li>
+          <li><a href="prdts1.html">Products</a></li>
+          <li><a href="" class="active">Order</a></li>
+          
+      </ul>
+
+
+      
+
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+          
+          <!--like------>
+          <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+              <span>0</span>
+          </a>
+              
+          <!--cart------>
+          <a href="#" class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>0</span>
+          </a>
+          
+
+              
+              
+      </div>
+  
+
+  </nav>
+  <!--nav-end----------------------->
+
+  <div class="header">
+    <h5>Welcome To order Section</h5>
+    <hr>
+  </div>
+
+    <main class="order-page">
+      <section>
+          <div class="order-form">
+              <h1>Customer Information</h1>
+              
+              <form id="order-form">
+                  <div class="form-group">
+                      <input type="text" name="fullname" placeholder="Full Name" required>
+                      <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="phone" placeholder="Phone Number" required>
+                      <input type="text" name="address" placeholder="Street Address" required>
+                  </div>
+                 
+                  
+                  <!-- Payment Method -->
+                  <div class="product-select">
+                      <label for="payment-method">Choose a payment method:</label>
+                      <select id="payment-method" name="payment-method" required>
+                          <option value="" disabled selected>Select payment method</option>
+                          <option value="cash">Cash</option>
+                          <option value="credit-card">Credit Card</option>
+                          <option value="bank-transfer">Bank Transfer</option>
+                          <option value="paypal">PayPal</option>
+                      </select>
+                  </div>
+                 
+                  <!-- Order Page Form Button -->
+                  <button type="submit" class="orderbtn">Pay</button>
+                  <p>By confirming your order, you accept our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy</a>. You may receive SMS updates from us, with the option to unsubscribe at any moment.</p>
+              </form>
+          </div>
+      </section>
+       
+      
+      <!-- order summary table -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p id="order-total-price">Total Price: 0.00 RS</p>
+        <div class="button-container">
+            <button id="add-to-favourites-order" class="button favourites-btn">Add to Favourites</button>
+            <button id="apply-favourites-order" class="button favourites-btn">Apply Favourites</button>
+        </div>
+      </section>
+
+
+      
+   
+      
+     
+
+     
+
+  </main>
+   <!--==Footer===============================-->
+   <footer>
+    <div class="footer-container">
+
+        
+        <!--logo-cntainer------->
+        <div class="footer-logo">
+        <a href="#"><span>Fresh</span>Finds</a>
+
+        <!--social---->
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+
+    <!--links--------------->
+    <div class="footer-links">
+        <h1><strong>Pages</strong></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us.html">AboutUs</a></li>
+            <li><a href="prdts1.html">Products</a></li>
+            
+    </div>
+
+    <!--links--------------->
+    <div class="footer-links1">
+        <strong>Products</strong>
+        
+    </div>
+
+    <!--Newsletter-subscription-------------->
+    <section>
+        <div class="footer-subscription">
+            <h2>Subscribe to Our Newsletter</h2>
+            <hr>
+            <p>Stay updated with our latest products and promotions. Subscribe to our newsletter:</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+</footer>
+
+  
+  
+    
+
+     <script src="./main.js"></script>
+
+
+    
+</body>
+</html>

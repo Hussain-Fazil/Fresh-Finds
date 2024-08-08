@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products page</title>
+
+    
+      <!--to link css-->
+      <link rel="stylesheet" href="./prdts1.css" type="text/css">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+   
+
+
+      <!--link to google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+      <!--link to reset css-->
+      <link rel="stylesheet" href="./css/reset.css">
+  
+      <!--link to font awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+</head>
+<body>
+
+         <!--==Navigation============================-->
+    <nav class="navigation">
+
+      <!--logo------->
+      <div class="fresh">
+          <a href="#" class="logo">
+          <span>Fresh</span>Finds
+          </a>
+      </div>
+
+
+      <!--menu--------->
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Us.html">AboutUs</a></li>
+          <li><a href="" class="active">Products</a></li>
+          <li><a href="order1.html">Order</a></li>
+         
+      </ul>
+
+
+      
+
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+          
+          <!--like------>
+          <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+              <span>0</span>
+          </a>
+              
+          <!--cart------>
+          <a href="#" class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>0</span>
+          </a>
+          
+
+              
+              
+      </div>
+  
+
+  </nav>
+  <!--nav-end----------------------->
+
+
+  <section class="products" id="products">
+
+
+
+   
+ 
+    <div class="image">
+        <img src="./images/foodtriangle.jpeg" alt="">
+        <span>Fresh and Organic</span>
+      <h3>Your daily Home <br> Need Products</h3>
+
+  <form class="d-flex">
+      <input class="me-2 search" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn1" type="submit">Search</button>
+  </form>
+
+</section>
+
+
+    </header>
+
+    <!--products page-->
+    <main class="products-page">
+      <section class="category">
+          <h2>Fruits</h2>
+          <div class="fruit-grid">
+  
+              <!-- Fruit 1 -->
+              <div class="fruit-box">
+                  <h3>Apple</h3>
+                  <img src="./images/" alt="Apple" class="fruit-image">
+                  <p>Price: 250.00 RS</p>
+                  <label for="apple-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="apple-quantity" name="apple-quantity" min="1" max="100" value="0" data-price="250" data-unit="kg">
+                  <button class="add-to-cart" data-name="Apple" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Fruit 2 -->
+              <div class="fruit-box">
+                  <h3>Banana</h3>
+                  <img src="./images/banana.png" alt="Banana" class="fruit-image">
+                  <p>Price: 350.00 RS</p>
+                  <label for="banana-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="banana-quantity" name="banana-quantity" min="1" max="100" value="0" data-price="350" data-unit="kg">
+                  <button class="add-to-cart" data-name="Banana" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Fruit 3 -->
+              <div class="fruit-box">
+                  <h3>Orange</h3>
+                  <img src="./images/orange.png" alt="Orange" class="fruit-image">
+                  <p>Price: 150.00 RS</p>
+                  <label for="orange-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="orange-quantity" name="orange-quantity" min="1" max="100" value="0" data-price="150" data-unit="kg">
+                  <button class="add-to-cart" data-name="Orange" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Fruit 4 -->
+              <div class="fruit-box">
+                  <h3>Watermelon</h3>
+                  <img src="./images/watermelon1.png" alt="Watermelon" class="fruit-image">
+                  <p>Price: 600.00 RS</p>
+                  <label for="watermelon-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="watermelon-quantity" name="watermelon-quantity" min="1" max="100" value="0" data-price="600" data-unit="kg">
+                  <button class="add-to-cart" data-name="Watermelon" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Fruit 5 -->
+              <div class="fruit-box">
+                  <h3>Grapes</h3>
+                  <img src="./images/grapes.png" alt="grapes" class="fruit-image">
+                  <p>Price: 1100.00 RS</p>
+                  <label for="grape-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="grape-quantity" name="grape-quantity" min="1" max="100" value="0" data-price="1100" data-unit="kg">
+                  <button class="add-to-cart" data-name="grape"data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Fruit 6 -->
+              <div class="fruit-box">
+                  <h3>Strawberry</h3>
+                  <img src="./images/strawberry.png" alt="Strawberry" class="fruit-image">
+                  <p>Price: 950.00 RS</p>
+                  <label for="strawberry-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="strawberry-quantity" name="strawberry-quantity" min="1" max="100" value="0" data-price="950" data-unit="kg">
+                  <button class="add-to-cart" data-name="Strawberry"data-unit="kg">Add to Cart</button>
+              </div>
+          </div>
+      </section>
+  
+      <!--vegetables section-->
+      <section class="category">
+          <h2 class="vegetables-heading">Vegetables</h2>
+          <div class="vegetable-grid">
+  
+              <!-- Vegetable 1 -->
+              <div class="vegetable-box">
+                  <h3>Tomato</h3>
+                  <img src="./images/tomato2.png" alt="Tomato" class="vegetable-image">
+                  <p>Price: 300.00 RS</p>
+                  <label for="tomato-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="tomato-quantity" name="tomato-quantity" min="1" max="100" value="0" data-price="300" data-unit="kg">
+                  <button class="add-to-cart" data-name="Tomato" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Vegetable 2 -->
+              <div class="vegetable-box">
+                  <h3>Carrot</h3>
+                  <img src="./images/carrot1.png" alt="Carrot" class="vegetable-image">
+                  <p>Price: 240.00 RS</p>
+                  <label for="carrot-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="carrot-quantity" name="carrot-quantity" min="1" max="100" value="0" data-price="240" data-unit="kg">
+                  <button class="add-to-cart" data-name="Carrot" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Vegetable 3 -->
+              <div class="vegetable-box">
+                  <h3>Brinjal</h3>
+                  <img src="./images/brinjal1.png" alt="Brinjal" class="vegetable-image">
+                  <p>Price: 330.00 RS</p>
+                  <label for="brinjal-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="brinjal-quantity" name="brinjal-quantity" min="1" max="100" value="0" data-price="330" data-unit="kg">
+                  <button class="add-to-cart" data-name="Brinjal" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Vegetable 4 -->
+              <div class="vegetable-box">
+                  <h3>Cabbage</h3>
+                  <img src="./images/cabage1.png" alt="Cabbage" class="vegetable-image">
+                  <p>Price: 250.00 RS</p>
+                  <label for="cabbage-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="cabbage-quantity" name="cabbage-quantity" min="1" max="100" value="0" data-price="250" data-unit="kg">
+                  <button class="add-to-cart" data-name="Cabbage" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Vegetable 5 -->
+              <div class="vegetable-box">
+                  <h3>Potato</h3>
+                  <img src="images/patato.png" alt="Potato" class="vegetable-image">
+                  <p>Price: 270.00 RS</p>
+                  <label for="potato-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="potato-quantity" name="potato-quantity" min="1" max="100" value="0" data-price="270" data-unit="kg">
+                  <button class="add-to-cart" data-name="Potato" data-unit="kg">Add to Cart</button>
+              </div>
+  
+              <!-- Vegetable 6 -->
+              <div class="vegetable-box">
+                  <h3>Onion</h3>
+                  <img src="./images/onions1.png" alt="onion" class="vegetable-image">
+                  <p>Price: 300.00 RS</p>
+                  <label for="onion-quantity">Quantity: 1 kg</label>
+                  <input type="number" id="onion-quantity" name="onion-quantity" min="1" max="100" value="0" data-price="300" data-unit="kg">
+                  <button class="add-to-cart" data-name="onion" data-unit="kg">Add to Cart</button>
+              </div>
+          </div>
+      </section>
+
+      
+      <!-- Dairy Produce Section -->
+      <section class="category">
+        <h2 class="dairy-heading">Dairy Produce</h2>
+        <div class="dairy-grid">
+  
+              <!-- Dairy Product 1 -->
+            <div class="dairy-box">
+                <h3>Fresh Milk</h3>
+                <img src="./images/milk.jpg" alt="Milk" class="dairy-image">
+                <p>Price: 480.00 RS</p>
+                <label for="milk-quantity">Quantity: 1 liter</label>
+                <input type="number" id="milk-quantity" name="milk-quantity" min="1" max="100" value="0" data-price="480" data-unit="liter">
+                <button class="add-to-cart" data-name="Milk" data-unit="liter">Add to Cart</button>
+            </div>
+  
+            <!-- Dairy Product 2 -->
+          <div class="dairy-box">
+                <h3>Cheese</h3>
+                <img src="./images/cheese.jpg" alt="Cheese" class="dairy-image">
+                <p>Price: 800.00 RS</p>
+                <label for="cheese-quantity">Quantity: 1 kg</label>
+                <input type="number" id="cheese-quantity" name="cheese-quantity" min="1" max="100" value="0" data-price="800" data-unit="kg">
+                <button class="add-to-cart" data-name="Cheese" data-unit="kg">Add to Cart</button>
+          </div>
+  
+        <!-- Dairy Product 3 -->
+        <div class="dairy-box">
+            <h3>Yogurt</h3>
+            <img src="./images/yoghurt.jpg" alt="Yogurt" class="dairy-image">
+            <p>Price: 70.00 RS</p>
+            <label for="yogurt-quantity">Quantity: 1 kg</label>
+            <input type="number" id="yogurt-quantity" name="yogurt-quantity" min="1" max="100" value="0" data-price="70" data-unit="kg">
+            <button class="add-to-cart" data-name="Yogurt" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Dairy Product 4 -->
+        <div class="dairy-box">
+            <h3>Butter</h3>
+            <img src="./images/Butter.jpg" alt="Butter" class="dairy-image">
+            <p>Price: 750.00 RS</p>
+            <label for="butter-quantity">Quantity: 1 kg</label>
+            <input type="number" id="butter-quantity" name="butter-quantity" min="1" max="100" value="0" data-price="750" data-unit="kg">
+            <button class="add-to-cart" data-name="Butter" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Dairy Product 5 -->
+        <div class="dairy-box">
+            <h3>Ghee</h3>
+            <img src="./images/ghee.jpg" alt="Ghee" class="dairy-image">
+            <p>Price: 310.00 RS</p>
+            <label for="ghee-quantity">Quantity: 1 kg</label>
+            <input type="number" id="ghee-quantity" name="ghee-quantity" min="1" max="100" value="0" data-price="310" data-unit="kg">
+            <button class="add-to-cart" data-name="Ghee" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Dairy Product 6 -->
+        <div class="dairy-box">
+            <h3>Custard</h3>
+            <img src="./images/custard.jpg" alt="Curd" class="dairy-image">
+            <p>Price: 170.00 RS</p>
+            <label for="custard-quantity">Quantity: 1 kg </label>
+            <input type="number" id="custard-quantity" name="custard-quantity" min="1" max="100" value="0" data-price="170" data-unit="kg">
+            <button class="add-to-cart" data-name="Custard" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        </div>
+      </section>
+      
+    <!-- meat and seafood section -->
+    <section class="category">
+      <h2 class="meat-seafood-heading">Meat and Seafood</h2>
+      <div class="meat-seafood-grid">
+  
+        <!-- Meat 1 -->
+        <div class="meat-seafood-box">
+            <h3>Chicken</h3>
+            <img src="./images/chicken.png" alt="Chicken" class="meat-seafood-image">
+            <p>Price: 1380.00 RS</p>
+            <label for="chicken-quantity">Quantity: 1 kg</label>
+            <input type="number" id="chicken-quantity" name="chicken-quantity" min="1" max="100" value="0" data-price="1380" data-unit="kg">
+            <button class="add-to-cart" data-name="Chicken" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Meat 2 -->
+        <div class="meat-seafood-box">
+            <h3>Beef</h3>
+            <img src="./images/beef.png" alt="Beef" class="meat-seafood-image">
+            <p>Price: 2450.00 RS</p>
+            <label for="beef-quantity">Quantity: 1 kg</label>
+            <input type="number" id="beef-quantity" name="beef-quantity" min="1" max="100" value="0" data-price="2450" data-unit="kg">
+            <button class="add-to-cart" data-name="Beef" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Meat 3 -->
+        <div class="meat-seafood-box">
+            <h3>Fish</h3>
+            <img src="./images/fishmeat.png" alt="Lamb" class="meat-seafood-image">
+            <p>Price: 1150.00 RS</p>
+            <label for="fish-quantity">Quantity: 1 kg</label>
+            <input type="number" id="fish-quantity" name="fish-quantity" min="1" max="100" value="0" data-price="1150" data-unit="kg">
+            <button class="add-to-cart" data-name="Fish" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Seafood 1 -->
+        <div class="meat-seafood-box">
+            <h3>Lobster</h3>
+            <img src="./images/lobster.png" alt="fish" class="meat-seafood-image">
+            <p>Price: 2700.00 RS</p>
+            <label for="lobster-quantity">Quantity: 1 kg</label>
+            <input type="number" id="l-quantity" name="lobster-quantity" min="1" max="100" value="0" data-price="2700" data-unit="kg">
+            <button class="add-to-cart" data-name="Lobster" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Seafood 2 -->
+        <div class="meat-seafood-box">
+            <h3>Prawns</h3>
+            <img src="./images/prawns.png" alt="prawns" class="meat-seafood-image">
+            <p>Price: 2500.00 RS</p>
+            <label for="prawns-quantity">Quantity: 1 kg</label>
+            <input type="number" id="prawns-quantity" name="prawns-quantity" min="1" max="100" value="0" data-price="2500" data-unit="kg">
+            <button class="add-to-cart" data-name="prawns" data-unit="kg">Add to Cart</button>
+        </div>
+  
+        <!-- Seafood 3 -->
+        <div class="meat-seafood-box">
+            <h3>Crab</h3>
+            <img src="./images/crab.png" alt="Crab" class="meat-seafood-image">
+            <p>Price: 1780.00 RS</p>
+            <label for="crab-quantity">Quantity: 1 kg</label>
+            <input type="number" id="crab-quantity" name="crab-quantity" min="1" max="100" value="0" data-price="1780" data-unit="kg">
+            <button class="add-to-cart" data-name="Crab" data-unit="kg">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+          <!-- Cooking and Baking Ingredients Section -->
+          <section class="category">
+          <h2 class="cooking-baking-heading">Cooking and Baking Ingredients</h2>
+          <div class="cooking-baking-grid">
+
+          <!-- Cooking Ingredient 1 -->
+          <div class="cooking-baking-box">
+            <h3>Flour</h3>
+            <img src="./images/flour.png" alt="Flour" class="cooking-baking-image">
+            <p>Price: 320.00 RS</p>
+            <label for="flour-quantity">Quantity: 1 liter</label>
+            <input type="number" id="flour-quantity" name="flour-quantity" min="1" max="100" value="0" data-price="320" data-unit="kg">
+            <button class="add-to-cart" data-name="Flour" data-unit="liter">Add to Cart</button>
+          </div>
+
+          <!-- Cooking Ingredient 2 -->
+          <div class="cooking-baking-box">
+            <h3>Cocoa Powder</h3>
+            <img src="./images/cocoa powder.jpeg" alt="Cocoa Powder" class="cooking-baking-image">
+            <p>Price: 220.00 RS</p>
+            <label for="cocoa-powder-quantity">Quantity: 1 kg</label>
+            <input type="number" id="cocoa-powder-quantity" name="cocoa-powder-quantity" min="1" max="100" value="0" data-price="220" data-unit="kg">
+            <button class="add-to-cart" data-name="Cocoa Powder" data-unit="kg">Add to Cart</button>
+          </div>
+
+          <!-- Cooking Ingredient 3 -->
+          <div class="cooking-baking-box">
+            <h3>Baking Powder</h3>
+            <img src="./images/baking powder.jpeg" alt="Baking Powder" class="cooking-baking-image">
+            <p>Price: 200.00 RS</p>
+            <label for="baking-powder-quantity">Quantity: 1 bottle</label>
+            <input type="number" id="baking-powder-quantity" name="baking-powder-quantity" min="1" max="100" value="0" data-price="200" data-unit="bottle">
+            <button class="add-to-cart" data-name="Baking Powder" data-unit="bottle">Add to Cart</button>
+          </div>
+
+          <!-- Baking Ingredient 1 -->
+          <div class="cooking-baking-box">
+            <h3>Vanilla Essence</h3>
+            <img src="./vanilla extract.png" alt="Vanilla Essence" class="cooking-baking-image">
+            <p>Price: 160.00 RS</p>
+            <label for="vanilla-essence-quantity">Quantity: 1 kg</label>
+            <input type="number" id="vanilla-essence-quantity" name="vanilla-essence-quantity" min="1" max="100" value="0" data-price="160" data-unit="kg">
+            <button class="add-to-cart" data-name="Vanilla Essence" data-unit="kg">Add to Cart</button>
+          </div>
+
+          <!-- Baking Ingredient 2 -->
+          <div class="cooking-baking-box">
+            <h3>Sugar</h3>
+            <img src="./sugar-png-8442.png" alt="Sugar" class="cooking-baking-image">
+            <p>Price: 190.00 RS</p>
+            <label for="sugar-quantity">Quantity: 1 kg</label>
+            <input type="number" id="sugar-quantity" name="sugar-quantity" min="1" max="100" value="0" data-price="190" data-unit="kg">
+            <button class="add-to-cart" data-name="Sugar" data-unit="kg">Add to Cart</button>
+          </div>
+
+          <!-- Baking Ingredient 3 -->
+          <div class="cooking-baking-box">
+            <h3>Yeast</h3>
+            <img src="./yeast.png" alt="cocoa Powder" class="cooking-baking-image">
+            <p>Price: 460.00 RS</p>
+            <label for="yeast-quantity">Quantity: 1 kg</label>
+            <input type="number" id="yeast-quantity" name="yeast-quantity" min="1" max="100" value="0" data-price="460" data-unit="kg">
+            <button class="add-to-cart" data-name="Yeast" data-unit="kg">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      
+      <!--product table -->
+      <section class="cart">
+        <h2>Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p id="total-price">Total Price: 0.00 RS</p>
+        <div class="button-container">
+            <a href="./order1.html" id="buy-now-btn" class="button buy-now-btn">Buy Now</a>
+           
+        </div>
+      </section>
+        
+    </main>
+
+
+
+         <!--==Footer===============================-->
+    <footer>
+      <div class="footer-container">
+  
+          
+          <!--logo-cntainer------->
+          <div class="footer-logo">
+          <a href="#"><span>Fresh</span>Finds</a>
+  
+          <!--social---->
+          <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+  
+      </div>
+  
+  
+      <!--links--------------->
+      <div class="footer-links">
+          <h1><strong>Pages</strong></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About Us.html">AboutUs</a></li>  
+              <li><a href="order1.html">Order</a></li>
+              
+      </div>
+  
+      <!--links--------------->
+      <div class="footer-links1">
+          <strong>Products</strong>
+          
+      </div>
+  
+      <!--Newsletter-subscription-------------->
+      <section>
+          <div class="footer-subscription">
+              <h2>Subscribe to Our Newsletter</h2>
+              <hr>
+              <p>Stay updated with our latest products and promotions. Subscribe to our newsletter:</p>
+              <form>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </section>
+  
+  
+  </footer>
+
+  <script src="./main.js"></script>
+    
+</body>
+</html>
